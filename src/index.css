@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* ABU Brand Colors */
+    --background: 48 20% 98%;
+    --foreground: 120 30% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 120 30% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 120 30% 15%;
+
+    /* ABU Green - Primary */
+    --primary: 120 100% 20%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Cream/Off-white - Secondary */
+    --secondary: 48 40% 96%;
+    --secondary-foreground: 120 30% 15%;
+
+    --muted: 48 20% 94%;
+    --muted-foreground: 120 10% 40%;
+
+    /* Gold - Accent */
+    --accent: 45 93% 47%;
+    --accent-foreground: 120 30% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 120 15% 85%;
+    --input: 120 15% 85%;
+    --ring: 120 100% 20%;
+
+    --radius: 0.5rem;
+
+    /* Custom tokens */
+    --gold: 45 93% 47%;
+    --gold-light: 48 100% 90%;
+    --green-dark: 120 100% 15%;
+    --green-light: 120 40% 95%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(120 100% 20%) 0%, hsl(120 80% 25%) 50%, hsl(120 60% 30%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(45 93% 47%) 0%, hsl(40 90% 55%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(48 40% 98%) 100%);
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(120 30% 15% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(120 30% 15% / 0.1), 0 2px 4px -2px hsl(120 30% 15% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(120 30% 15% / 0.1), 0 4px 6px -4px hsl(120 30% 15% / 0.1);
+    --shadow-xl: 0 20px 25px -5px hsl(120 30% 15% / 0.1), 0 8px 10px -6px hsl(120 30% 15% / 0.1);
+    --shadow-gold: 0 4px 14px 0 hsl(45 93% 47% / 0.3);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 120 30% 8%;
+    --foreground: 48 20% 95%;
+
+    --card: 120 25% 12%;
+    --card-foreground: 48 20% 95%;
+
+    --popover: 120 25% 12%;
+    --popover-foreground: 48 20% 95%;
+
+    --primary: 120 60% 45%;
+    --primary-foreground: 120 30% 8%;
+
+    --secondary: 120 20% 18%;
+    --secondary-foreground: 48 20% 95%;
+
+    --muted: 120 15% 20%;
+    --muted-foreground: 48 15% 65%;
+
+    --accent: 45 93% 55%;
+    --accent-foreground: 120 30% 8%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 120 15% 25%;
+    --input: 120 15% 25%;
+    --ring: 120 60% 45%;
+
+    --gold: 45 93% 55%;
+    --gold-light: 45 50% 20%;
+    --green-dark: 120 100% 10%;
+    --green-light: 120 30% 15%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(120 40% 15%) 0%, hsl(120 50% 20%) 50%, hsl(120 60% 25%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(120 25% 12%) 0%, hsl(120 20% 10%) 100%);
+
+    --sidebar-background: 120 25% 10%;
+    --sidebar-foreground: 48 20% 95%;
+    --sidebar-primary: 120 60% 45%;
+    --sidebar-primary-foreground: 120 30% 8%;
+    --sidebar-accent: 120 20% 18%;
+    --sidebar-accent-foreground: 48 20% 95%;
+    --sidebar-border: 120 15% 25%;
+    --sidebar-ring: 120 60% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .hero-pattern {
+    background-image: 
+      radial-gradient(circle at 20% 80%, hsl(var(--gold) / 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsl(var(--primary) / 0.15) 0%, transparent 50%),
+      linear-gradient(180deg, transparent 0%, hsl(var(--background) / 0.8) 100%);
+  }
+
+  .glass-effect {
+    @apply backdrop-blur-md bg-card/80 border border-border/50;
+  }
+
+  .gold-glow {
+    box-shadow: var(--shadow-gold);
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-gold);
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  .section-pattern {
+    background-image: 
+      radial-gradient(circle at 100% 0%, hsl(var(--primary) / 0.03) 0%, transparent 25%),
+      radial-gradient(circle at 0% 100%, hsl(var(--gold) / 0.05) 0%, transparent 25%);
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.4s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideUp {
+    from { 
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to { 
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from { 
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to { 
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
