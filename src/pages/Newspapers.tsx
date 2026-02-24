@@ -37,14 +37,14 @@ const Newspapers = () => {
           <div className="max-w-3xl mx-auto text-center">
             <span className="inline-block px-3 py-1 rounded-full bg-accent/20 text-accent text-sm font-medium mb-6">
               <Newspaper className="inline-block h-4 w-4 mr-1" />
-              Department Newspapers
+              Section Newspapers
             </span>
             <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-6">
               News & Updates
-              <span className="text-accent block mt-2">From All Departments</span>
+              <span className="text-accent block mt-2">From All Section</span>
             </h1>
             <p className="text-lg text-white/80 mb-8">
-              Stay informed with the latest articles, announcements, and events from across SESA departments.
+              Stay informed with the latest articles, announcements, and events from across SESA Section.
             </p>
             
             {/* Search */}

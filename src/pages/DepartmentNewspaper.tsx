@@ -44,9 +44,9 @@ const DepartmentNewspaper = () => {
         <div className="container mx-auto px-4 py-16">
           <div className="max-w-2xl mx-auto text-center">
             <Newspaper className="h-16 w-16 text-muted-foreground mx-auto mb-4" />
-            <h1 className="text-2xl font-bold mb-2">Department Not Found</h1>
+            <h1 className="text-2xl font-bold mb-2">Section Not Found</h1>
             <p className="text-muted-foreground mb-6">
-              The department you're looking for doesn't exist.
+              The section you're looking for doesn't exist.
             </p>
             <Button asChild>
               <Link to="/newspapers">
