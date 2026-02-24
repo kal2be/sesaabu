@@ -16,6 +16,15 @@ import fin from "@/assets/picture/FIN SEC.png"
 import house from "@/assets/picture/HOUSE LEADER.png"
 import presi from "@/assets/picture/PRESIDENT.png"
 import pro from "@/assets/picture/PRO.png"
+import sec from "@/assets/picture/sec gen .png"
+import vice from "@/assets/picture/Vice President.png"
+import welfare from "@/assets/picture/WELFARE DR.png"
+import treas from "@/assets/picture/TRESURER.png"
+import hamza from "@/assets/picture/SENATE PRESIDENT.png"
+import kelechi from "@/assets/picture/SENATOR.png"
+import hudu from "@/assets/picture/SEnator i.png"
+import Olukanni from "@/assets/picture/SENATOR (1).png"
+
 const members = [
   {
     name: "Madinatu Abubakar",
@@ -23,6 +32,21 @@ const members = [
     department: "Integrated Science",
     level: "400L",
     image: presi,
+  },
+  {
+    name: "Umar Musa",
+    role: "Secretariat General",
+    department: "Computer Science",
+    level: "300L",
+    image: sec,
+  },
+
+  {
+    name: "Isiyaku Moh'd Kudu",
+    role: "Vice President 1",
+    department: "Computer Science",
+    level: "400L",
+    image: vice,
   },
   {
     name: "Tahir Adejare Amina",
@@ -52,33 +76,13 @@ const members = [
     level: "300L",
     image: chief,
   },
+  
    {
-    name: "Jeminu Bilkisu Onomuel",
-    role: "Chief WHIP",
-    department: "Integrated Science Education",
-    level: "300L",
-    image: whip,
-  },
-   {
-    name: "Ogabi Gideon Olamide",
-    role: "CLERK",
+    name: "Idoko Mary John",
+    role: "Treasurer",
     department: "Biology Education",
-    level: "200L",
-    image: clrk,
-  },
-   {
-    name: "Maryam Ahmed",
-    role: "Deputy CLERK",
-    department: "Computer Education",
-    level: "200L",
-    image: dclrk,
-  },
-   {
-    name: "Fatima Ibrahim",
-    role: "Deputy Senate President",
-    department: "Physics Education",
-    level: "200L",
-    image: dsenate,
+    level: "300L",
+    image: treas,
   },
    {
     name: "Isah Abdulrahman",
@@ -107,8 +111,57 @@ const members = [
     department: "Integrated Science",
     level: "400L",
     image:fin,
+  },  
+   {
+    name: "Oluwabunmi Ayodele",
+    role: "Welfare Director",
+    department: "Biology Education",
+    level: "300L",
+    image: welfare,
   },
    {
+    name: "Augustine Emmenuel",
+    role: "Assistance Financial Secretary",
+    department: "Geography Education",
+    level: "300L",
+    image: pro,
+  },
+   
+  // add 15+ members easily
+];
+
+
+const parlements =[
+   {
+    name: "Fatima Ibrahim",
+    role: "Deputy Senate President",
+    department: "Physics Education",
+    level: "200L",
+    image: dsenate,
+  },
+  
+   {
+    name: "Jeminu Bilkisu Onomuel",
+    role: "Chief WHIP",
+    department: "Integrated Science Education",
+    level: "300L",
+    image: whip,
+  },
+   {
+    name: "Ogabi Gideon Olamide",
+    role: "CLERK",
+    department: "Biology Education",
+    level: "200L",
+    image: clrk,
+  },
+   {
+    name: "Maryam Ahmed",
+    role: "Deputy CLERK",
+    department: "Computer Education",
+    level: "200L",
+    image: dclrk,
+  },
+  {
     name: "Umar Ahmed Musa",
     role: "House Leader",
     department: "Biology Education",
@@ -116,28 +169,34 @@ const members = [
     image:house,
   },
    {
-    name: "Aisha Faruk Usman",
-    role: "P.R.O",
+    name: "Kelechi Precious Ezinne",
+    role: "Senator",
+    department: "Integrated Science",
+    level: "300L",
+    image: kelechi,
+  },
+   {
+    name: "Hamza Ozigi",
+    role: "Senate President",
+    department: "Computer Education",
+    level: "300L",
+    image: hamza,
+  },
+   {
+    name: "Huda Aisha Ibrahim",
+    role: "Senator",
     department: "Chemistry Education",
-    level: "300L",
-    image: pro,
+    level: "200L",
+    image: hudu,
   },
    {
-    name: "Augustine Emmenuel",
-    role: "Assistance Financial Secretary",
-    department: "Geography Education",
-    level: "300L",
-    image: pro,
+    name: "Olukanni Damilola Deborah",
+    role: "Senator",
+    department: "Chemistry Education",
+    level: "200L",
+    image: Olukanni,
   },
-   {
-    name: "Augustine Emmenuel",
-    role: "Assistance Financial Secretary",
-    department: "Geography Education",
-    level: "300L",
-    image: ass,
-  },
-  // add 15+ members easily
-];
+]
 
 export default function Member() {
   const ITEMS_PER_LOAD = 10;
@@ -155,11 +214,11 @@ export default function Member() {
   return (
     <section className="px-4 py-10">
       <h2 className="text-3xl font-bold text-center mb-8">
-        Science Education <span className="text-green-800"> Team and Member</span>
+        SESA<span className="text-green-800"> Executives 2025-2026</span>
       </h2>
 
       {/* Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
         {members.slice(0, visibleCount).map((member, index) => (
           <ImageCard key={index} member={member} />
         ))}
@@ -178,6 +237,15 @@ export default function Member() {
           </button>
         </div>
       )}
+
+        <h2 className="text-3xl font-bold text-center mb-8 pt-8">
+        SESA<span className="text-green-800"> Student Representative Assembly</span>
+      </h2>
+       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+        {parlements.slice(0, visibleCount).map((member, index) => (
+          <ImageCard key={index} member={member} />
+        ))}
+      </div>
     </section>
   );
 }

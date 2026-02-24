@@ -9,11 +9,8 @@ const departments = [
   { name: "Computer Education", slug: "computer-education", icon: Monitor, color: "from-purple-500 to-violet-600" },
   { name: "Mathematics", slug: "mathematics", icon: Calculator, color: "from-orange-500 to-amber-600" },
   { name: "Physics", slug: "physics", icon: Atom, color: "from-red-500 to-rose-600" },
-  { name: "Statistics", slug: "statistics", icon: BarChart3, color: "from-teal-500 to-cyan-600" },
-  { name: "Zoology", slug: "zoology", icon: Bug, color: "from-lime-500 to-green-600" },
-  { name: "Geology", slug: "geology", icon: Mountain, color: "from-stone-500 to-slate-600" },
-  { name: "SEIT", slug: "seit", icon: Cpu, color: "from-indigo-500 to-blue-600" },
-  { name: "EDSE", slug: "edse", icon: BookOpen, color: "from-pink-500 to-rose-600" },
+  { name: "Geographie", slug: "geography", icon: Mountain, color: "from-stone-500 to-slate-600" },
+  { name: "Integrated Science", slug: "Intgrated Science", icon: Cpu, color: "from-indigo-500 to-blue-600" },
 ];
 
 export function DepartmentsSection() {
@@ -23,19 +20,19 @@ export function DepartmentsSection() {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
           <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-            Our Departments
+            Our Sections
           </span>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             Academic Excellence Across
             <span className="text-primary"> All Disciplines</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Explore our diverse departments, each dedicated to advancing science education through innovative teaching and research.
+            Explore our diverse Section, each dedicated to advancing science education through innovative teaching and research.
           </p>
         </div>
 
         {/* Departments Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
           {departments.map((dept, index) => (
             <Link key={dept.slug} to={`/departments/${dept.slug}`}>
               <Card 

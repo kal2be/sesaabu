@@ -33,10 +33,10 @@ export default function Excutive() {
      <div className="min-h-screen bg-gray-100 p-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
       
       <ExExecutiveCard
-        name="Muhammad Bello"
+        name="Muhammad Bello Adam"
         role="Former President"
         department="Integrated Science"
-        tenure="2021/2023"
+        tenure="2021-2023"
         image={mb}
         email="Muhammadbelloadam.mb@gmail.com"
         phone="07067809863"
@@ -44,45 +44,27 @@ export default function Excutive() {
 
       <ExExecutiveCard
         name="Abubakar Sadiq Lawal"
-        role="Former Secretary"
+        role="Former President"
         department="Biology Education"
-        tenure="2022/2023"
+        tenure="2018-2019"
         image={abu}
         email="sadiqnasbak@gmail.com"
         phone="08138998185"
       />
       <ExExecutiveCard
         name="Umar Faruq Magaji"
-        role="Former Secretary"
+        role="Former President"
         department="Computer Science"
-        tenure="2022/2023"
+        tenure="2023/2024"
         image={gem}
         email="ufaroqmgj@gmail.com"
           phone="07033158787"
       />
       <ExExecutiveCard
         name="Ma'awuya Isah (Santiraki)"
-        role="Former Secretary"
+        role="Former President"
         department="Physics"
-        tenure="2022/2023"
-        image={law}
-        email="isahmaawuya571@gmail.com"
-      phone="08106160057"
-      />
-       <ExExecutiveCard
-        name="Umar Faruq Magaji"
-        role="Former Secretary"
-        department="Computer Science"
-        tenure="2022/2023"
-        image={gem}
-        email="ufaroqmgj@gmail.com"
-          phone="07033158787"
-      />
-      <ExExecutiveCard
-        name="Ma'awuya Isah (Santiraki)"
-        role="Former Secretary"
-        department="Physics"
-        tenure="2022/2023"
+        tenure="2024/2025"
         image={law}
         email="isahmaawuya571@gmail.com"
       phone="08106160057"

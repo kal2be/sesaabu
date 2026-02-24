@@ -27,17 +27,13 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 };
 
 const colorMap: Record<string, string> = {
-  biology: "from-green-500 to-emerald-600",
-  chemistry: "from-blue-500 to-cyan-600",
-  "computer-education": "from-purple-500 to-violet-600",
-  edse: "from-pink-500 to-rose-600",
-  gens: "from-amber-500 to-yellow-600",
-  geology: "from-stone-500 to-slate-600",
-  mathematics: "from-orange-500 to-amber-600",
-  physics: "from-red-500 to-rose-600",
-  zoology: "from-lime-500 to-green-600",
-  statistics: "from-teal-500 to-cyan-600",
-  seit: "from-indigo-500 to-blue-600",
+  "biology-Education": "from-green-800 to-green-200",
+  "chemistry Education": "from-green-800 to-green-200",
+  "computer-education": "from-green-800 to-green-200",
+   "mathematics": "from-green-800 to-green-200",
+  "physics": "from-green-800 to-green-200", 
+  "Integrated Science": "from-green-800 to-green-200",
+  "Geographie Education": "from-green-800 to-green-200",
 };
 
 const Departments = () => {
@@ -63,10 +59,10 @@ const Departments = () => {
             </span>
             <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-6">
               Our Academic
-              <span className="text-accent"> Departments</span>
+              <span className="text-accent"> Section</span>
             </h1>
             <p className="text-lg text-white/80 mb-8">
-              Discover our 11 specialized departments, each committed to excellence in science education.
+              Discover our 07 pecialized Section, each committed to excellence in science education.
             </p>
             
             {/* Search */}
@@ -135,7 +131,7 @@ const Departments = () => {
                       <div className="flex gap-3">
                         <Button variant="outline" size="sm" className="flex-1" asChild>
                           <Link to={`/departments/${dept.slug}`}>
-                            View Department
+                            View Section
                             <ArrowRight className="h-4 w-4 ml-1" />
                           </Link>
                         </Button>

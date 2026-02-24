@@ -1,5 +1,5 @@
 import { BookOpen } from "lucide-react";
-
+import logo from "@/assets/IMG-20260119-WA0000.png"
 interface LoadingPageProps {
   message?: string;
 }
@@ -13,8 +13,8 @@ const LoadingPage = ({ message = "Loading..." }: LoadingPageProps) => {
         <div className="absolute inset-0 h-24 w-24 rounded-full border-4 border-primary/20 border-t-primary animate-spin" />
         
         {/* Inner pulsing logo */}
-        <div className="h-24 w-24 rounded-full bg-primary/10 flex items-center justify-center animate-pulse">
-          <BookOpen className="h-10 w-10 text-primary" />
+        <div className="h-24 w-24 flex items-center justify-center animate-pulse">
+        <img src={logo} alt="abu-logo"/>
         </div>
       </div>
 

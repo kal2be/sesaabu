@@ -45,7 +45,7 @@ export function HeroSection() {
             </Button>
             <Button variant="hero-outline" size="xl" asChild>
               <Link to="/departments">
-                View Departments
+                View Section
                 <ArrowRight className="h-5 w-5" />
               </Link>
             </Button>
@@ -54,7 +54,7 @@ export function HeroSection() {
           {/* Quick Stats */}
           <div className="grid grid-cols-3 gap-4 md:gap-8 max-w-2xl mx-auto mt-16 animate-fade-in" style={{ animationDelay: "0.4s" }}>
             {[
-              { icon: Users, value: "11", label: "Departments" },
+              { icon: Users, value: "07", label: "Sections" },
               { icon: BookOpen, value: "500+", label: "Resources" },
               { icon: GraduationCap, value: "2000+", label: "Students" },
             ].map((stat, i) => (

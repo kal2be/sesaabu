@@ -39,7 +39,7 @@ function Prof() {
          <div className="min-h-screen bg-gray-100 p-8">
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
         
-        <LecturerCard
+        {/* <LecturerCard
           name="Danjuma Sunday"
           title="Lecturer"
           department="Biology Education"
@@ -48,95 +48,61 @@ function Prof() {
             "Biology Education"
           ]}
           email="sdkurama@gmail.com"
-        />
+        /> */}
 
          <LecturerCard
           name="Istifanus Samaila"
           title="Chief Technologists"
           department="Science Education Laboratory"
           image={b}
-          courses={[
-            "Advanced Programming",
-            "Educational Technology",
-            "Research Methodology"
-          ]}
           email="istifanusmails@gmail.com"
-          phone="+234 800 123 4567"
         />
 
          <LecturerCard
-          name="Mustapha Sani Bichi"
+          name="Dr. Mustapha Sani Bichi"
           title="Head, Physics Education Section"
           department="Physics Education"
           image={c}
-          courses={[
-            "Advanced Programming",
-            "Educational Technology",
-            "Research Methodology"
-          ]}
           email="msbichi@abu.edu. ng"
-          phone="+234 800 123 4567"
+         
         />
          <LecturerCard
-          name="Janet Funke JESULOWO"
+          name="Dr. Janet Funke JESULOWO"
           title="HOS Integrated Science"
           department="Biology/Integrated Science."
           image={d}
-          courses={[
-            "Advanced Programming",
-            "Educational Technology",
-            "Research Methodology"
-          ]}
           email="jjesulowo@gmail.com"
-          phone="+234 800 123 4567"
+         
         />
 
         <LecturerCard
-          name="Zaharaddeen Aliyu"
+          name="Dr. Zaharaddeen Aliyu"
           title="Head Section"
           department="Mathematics Education"
           image={e}
-          courses={[
-            "Data Structures",
-            "Web Development",
-            "Database Systems"
-          ]}
           email="zaliyu@abu.edu.ng"
         />
 
         <LecturerCard
-          name="Yusuf Feyisara Zakariya"
+          name="Dr. Yusuf Feyisara Zakariya"
           title="Head of Section (CSE)"
           department="Mathematics and Computer Education"
           image={f}
-          courses={[
-            "Computer Fundamentals",
-            "ICT in Education"
-          ]}
           email="yfzakariya@abu.edu.ng"
         />
          <LecturerCard
-          name="Muhammad Hayatu Yusuf"
+          name="Dr. Muhammad Hayatu Yusuf"
           title="Head of Section"
           department="Biology Education"
           image={g}
-          courses={[
-            "Data Structures",
-            "Web Development",
-            "Database Systems"
-          ]}
           email="hyusuf657@gmail.com"
         />
 
         <LecturerCard
-          name="Isa Alhaji Usman"
+          name="Prof. Isa Alhaji Usman"
           title="Dean Faculty of Education Kaduna State University"
           department="Biology & Integrated science Education"
           image={h}
-          courses={[
-            "Computer Fundamentals",
-            "ICT in Education"
-          ]}
           email='dr.isausman@gmail.com'
         />
 

@@ -4,20 +4,16 @@ interface LecturerProps {
   name: string;
   title: string; // Lecturer / Dean
   department: string;
-  courses: string[];
   image: string;
   email?: string;
-  phone?: string;
 }
 
 export default function LecturerCard({
   name,
   title,
   department,
-  courses,
   image,
   email,
-  phone,
 }: LecturerProps) {
   return (
     <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden">
@@ -45,29 +41,10 @@ export default function LecturerCard({
           <span>{department}</span>
         </div>
 
-        <div className="flex items-start gap-2 text-gray-600 text-sm">
-          <BookOpen size={16} className="mt-1" />
-          <div>
-            <p className="font-semibold text-gray-700">Courses:</p>
-            <ul className="list-disc list-inside">
-              {courses.map((course, index) => (
-                <li key={index}>{course}</li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
         {email && (
           <div className="flex items-center gap-2 text-gray-600 text-sm">
             <Mail size={16} />
             <span>{email}</span>
-          </div>
-        )}
-
-        {phone && (
-          <div className="flex items-center gap-2 text-gray-600 text-sm">
-            <Phone size={16} />
-            <span>{phone}</span>
           </div>
         )}
 
