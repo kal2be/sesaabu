@@ -10,6 +10,10 @@ import e from "@/assets/lect/5.jpg"
 import f from "@/assets/lect/6.jfif"
 import g from "@/assets/lect/7.jpg"
 import h from "@/assets/lect/8.jpg"
+import staff1 from "@/assets/lect/IMG-20260224-WA0000.jpg"
+import staff2 from "@/assets/lect/IMG-20260224-WA0001.jpg"  
+import staff3 from "@/assets/lect/IMG-20260224-WA0004.jpg"
+
 function Prof() {
   return (
      <>
@@ -23,34 +27,60 @@ function Prof() {
                 <div className="max-w-3xl mx-auto text-center">
                   <span className="inline-block px-3 py-1 rounded-full bg-accent/20 text-accent text-sm font-medium mb-6">
                     <BookOpen className="inline-block h-4 w-4 mr-1" />
-                   Lecturers
+                   Academy Staff
                   </span>
                   <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-6">
-                  Lecturer and Deans of the 
+                Staff and Deans of the 
                     <span className="text-accent block mt-2">Faculty</span>
                   </h1>
                   <p className="text-lg text-white/80">
-                    Access and contact Lecturers of sesa and Dean of the Faculty to learn and ask question direct from them .
+                    Access Staff of sesa and Dean of the Faculty to learn and ask question direct from them .
                   </p>
                 </div>
               </div>
             </section>
 
          <div className="min-h-screen bg-gray-100 p-8">
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-        
-        {/* <LecturerCard
-          name="Danjuma Sunday"
-          title="Lecturer"
-          department="Biology Education"
-          image={a}
-          courses={[
-            "Biology Education"
-          ]}
-          email="sdkurama@gmail.com"
-        /> */}
+          <h2 className="text-3xl font-bold text-center mb-8 pt-8">
+        Deans   <span className="text-green-800">of the Faculty</span>
+      </h2>
 
-         <LecturerCard
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+       
+ 
+        <LecturerCard
+          name="Prof. J.Mari"
+          title="Sesa Patron"
+          department="Chemistry Education"
+          image={staff1}
+          email='jsmarison@yahoo.com'
+        />
+        <LecturerCard
+          name="Prof. Abdullahi Dalhatu"
+          title="Dean Faculty of Education"
+          department="Biology Education"
+          image={staff2}
+          email='dr.isausman@gmail.com'
+        />
+       
+        
+        <LecturerCard
+          name="Prof. Isa Alhaji Usman"
+          title="Head of Department"
+          department="Physics Education"
+          image={staff3}
+          email='dr.isausman@gmail.com'
+        />
+        
+        
+
+      </div>
+          <h2 className="text-3xl font-bold text-center mb-8 pt-8">
+        Staff   <span className="text-green-800">of the Faculty</span>
+      </h2>
+      
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+<LecturerCard
           name="Istifanus Samaila"
           title="Chief Technologists"
           department="Science Education Laboratory"
@@ -69,7 +99,7 @@ function Prof() {
          <LecturerCard
           name="Dr. Janet Funke JESULOWO"
           title="HOS Integrated Science"
-          department="Biology/Integrated Science."
+          department="Biology Education."
           image={d}
           email="jjesulowo@gmail.com"
          
@@ -86,7 +116,7 @@ function Prof() {
         <LecturerCard
           name="Dr. Yusuf Feyisara Zakariya"
           title="Head of Section (CSE)"
-          department="Mathematics and Computer Education"
+          department="Computer Education"
           image={f}
           email="yfzakariya@abu.edu.ng"
         />
@@ -97,16 +127,15 @@ function Prof() {
           image={g}
           email="hyusuf657@gmail.com"
         />
-
         <LecturerCard
           name="Prof. Isa Alhaji Usman"
           title="Dean Faculty of Education Kaduna State University"
-          department="Biology & Integrated science Education"
+          department="Biology Education"
           image={h}
           email='dr.isausman@gmail.com'
         />
-
       </div>
+
     </div>
      </Layout>
      </>

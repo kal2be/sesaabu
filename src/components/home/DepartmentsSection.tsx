@@ -57,7 +57,7 @@ export function DepartmentsSection() {
         <div className="text-center mt-10">
           <Button variant="outline" size="lg" asChild>
             <Link to="/departments">
-              View All Departments
+              View All Section
               <ArrowRight className="h-4 w-4 ml-2" />
             </Link>
           </Button>

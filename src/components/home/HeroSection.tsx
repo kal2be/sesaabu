@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, BookOpen, Users, GraduationCap } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
-
+import abu from "@/assets/logo-ab.png"
 export function HeroSection() {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+    <section className="relative lg:min-h-[90vh] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -18,8 +18,8 @@ export function HeroSection() {
       <div className="relative z-10 container mx-auto px-4 py-20 md:py-32">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/20 border border-accent/30 text-accent mb-6 animate-fade-in">
-            <GraduationCap className="h-4 w-4" />
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-accent/30 text-gray-800 mb-6 animate-fade-in">
+            <img src={abu} alt="abu logo" className="w-6"/>
             <span className="text-sm font-medium">Ahmadu Bello University, Zaria</span>
           </div>
 

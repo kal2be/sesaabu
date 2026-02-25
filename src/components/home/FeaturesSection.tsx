@@ -4,17 +4,17 @@ const features = [
   {
     icon: BookOpen,
     title: "Digital Library",
-    description: "Access course materials, past questions, and study resources organized by department and level.",
+    description: "Access course materials, past questions, and study resources organized by section and level.",
   },
   {
     icon: Newspaper,
-    title: "Department Newspapers",
-    description: "Stay updated with the latest news, articles, and announcements from each department.",
+    title: "Section Newspapers",
+    description: "Stay updated with the latest news, articles, and announcements from each section.",
   },
   {
     icon: Calendar,
     title: "Events & Seminars",
-    description: "Never miss important academic events, workshops, and seminars happening across departments.",
+    description: "Never miss important academic events, workshops, and seminars happening across section.",
   },
   {
     icon: Award,

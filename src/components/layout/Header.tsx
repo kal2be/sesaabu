@@ -20,8 +20,8 @@ const navLinks = [
   { href: "/newspapers", label: "Newspapers" },
   { href: "/ai", label: "ChatBot" },
   { href: "/team", label: "Executives" },
-  { href: "/lecturer", label: "Staff&Lect" },
-    { href: "/exco", label: "Exco" },
+  { href: "/lecturer", label: "Staff" },
+    { href: "/exco", label: "Alumni" },
 ];
 
 export function Header() {

@@ -55,7 +55,7 @@ const Departments = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <span className="inline-block px-3 py-1 rounded-full bg-accent/20 text-accent text-sm font-medium mb-6">
-              Explore Departments
+              Explore Section
             </span>
             <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-6">
               Our Academic
@@ -69,7 +69,7 @@ const Departments = () => {
             <div className="max-w-md mx-auto relative">
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
               <Input 
-                placeholder="Search departments..." 
+                placeholder="Search section..." 
                 className="pl-12 h-12 bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:bg-white/20"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}

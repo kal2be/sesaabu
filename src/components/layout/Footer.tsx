@@ -3,7 +3,7 @@ import { GraduationCap, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instag
 import Sesa from "@/assets/IMG-20260119-WA0000.png"
 const departments = [
   "Biology", "Chemistry", "Computer Education", "Mathematics", 
-  "Physics", "Statistics", "Zoology", "Geology"
+  "Physics", "Integrated Science", "Geographie"
 ];
 
 const quickLinks = [

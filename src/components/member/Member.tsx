@@ -33,6 +33,13 @@ const members = [
     level: "400L",
     image: presi,
   },
+    {
+    name: "Isiyaku Moh'd Kudu",
+    role: "Vice President 1",
+    department: "Computer Science",
+    level: "400L",
+    image: vice,
+  },
   {
     name: "Umar Musa",
     role: "Secretariat General",
@@ -41,13 +48,7 @@ const members = [
     image: sec,
   },
 
-  {
-    name: "Isiyaku Moh'd Kudu",
-    role: "Vice President 1",
-    department: "Computer Science",
-    level: "400L",
-    image: vice,
-  },
+
   {
     name: "Tahir Adejare Amina",
     role: "Assistance Secretary Generale",
@@ -189,13 +190,13 @@ const parlements =[
     level: "200L",
     image: hudu,
   },
-   {
-    name: "Olukanni Damilola Deborah",
-    role: "Senator",
-    department: "Chemistry Education",
-    level: "200L",
-    image: Olukanni,
-  },
+  //  {
+  //   name: "Olukanni Damilola Deborah",
+  //   role: "Senator",
+  //   department: "Chemistry Education",
+  //   level: "200L",
+  //   image: Olukanni,
+  // },
 ]
 
 export default function Member() {

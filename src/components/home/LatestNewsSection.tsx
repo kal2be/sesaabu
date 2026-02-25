@@ -32,7 +32,7 @@ export function LatestNewsSection() {
             <span className="text-primary"> From SESA</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Stay informed with the latest happenings, events, and announcements from across all departments.
+            Stay informed with the latest happenings, events, and announcements from across all section.
           </p>
         </div>
 
